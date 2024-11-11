@@ -273,7 +273,7 @@ jobs:
 
   docker-image-build:
     machine:
-      image: ubuntu-2004:202201-02
+      image: ubuntu-2404:2024.08.1
     steps:
       - checkout
       - run:
@@ -298,7 +298,7 @@ jobs:
 
   docker-image-test-amd64:
     machine:
-      image: ubuntu-2004:202201-02
+      image: ubuntu-2404:2024.08.1
     steps:
       - checkout
       - run:
@@ -322,7 +322,7 @@ jobs:
 
   docker-image-test-arm64:
     machine:
-      image: ubuntu-2004:202201-02
+      image: ubuntu-2404:2024.08.1
     resource_class: arm.medium
     steps:
       - checkout
